@@ -25,15 +25,20 @@ function blueHeader () {
 
 blueHeader();
 
-// div 
+// Pink div 
 function pinkDiv() {
     let pinkDiv = createDiv;
     pinkDiv.style.cssText = 'background: pink; border: 4px solid black'
-    container.appendChild(pinkDiv);
 
     let divHeader = document.createElement('h1');
     divHeader.textContent = "I'm in a div";
     pinkDiv.appendChild(divHeader);
+
+    let divPara = document.createElement('p');
+    divPara.textContent = "ME TOO!";
+    pinkDiv.appendChild(divPara);
+
+    container.appendChild(pinkDiv);
 }
 
 pinkDiv();
